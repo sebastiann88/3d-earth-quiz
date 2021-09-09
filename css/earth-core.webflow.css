@@ -93,6 +93,7 @@
   width: 100%;
   margin-right: auto;
   margin-left: auto;
+  padding-left: 2.25em;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
