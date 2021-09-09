@@ -51,13 +51,6 @@ function randomGenerator() {
 
 //4. Loading the next question after the next question button is clicked
 
-//function nextQuestion(e) {
-//    e.preventDefault();
-//    getQuestion(++questionCount, randomGenerator);
-//}
-//    
-//submit.addEventListener("click", nextQuestion);
-
 submit.addEventListener("click",nextQuestion);
 
 function nextQuestion() { 	
@@ -65,7 +58,7 @@ function nextQuestion() {
 //    if(questionCount == 4) {
 //        setResultPage();
 //    }
-    return getQuestion(++questionCount, randomGenerator());;
+    return getQuestion(++questionCount, randomGenerator());
 }
 
 //5. Final parts - retake button, setting up random number for the first time, what happens when the page first loads etc
@@ -77,7 +70,7 @@ function nextQuestion() {
 //}
 
 rand = Math.round(Math.random() * questions.length);
-while(rand == questions.length) {
+while(rand === questions.length) {
 	rand = Math.round(Math.random() * questions.length);
 }
 
