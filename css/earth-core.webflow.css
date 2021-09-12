@@ -30,7 +30,7 @@
   left: 0%;
   top: auto;
   right: 0%;
-  bottom: 0%;
+  bottom: -5px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -323,5 +323,18 @@
   background-color: #2f9d68;
   font-size: 1.125em;
   text-align: center;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  max-width: 110em;
+  margin-top: 10em;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.body {
+  background-color: #000;
 }
 
