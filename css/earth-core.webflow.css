@@ -2,11 +2,13 @@
   position: absolute;
   left: 0%;
   top: 0%;
-  right: auto;
-  bottom: auto;
+  right: 0%;
+  bottom: 0%;
   display: block;
   width: 100%;
-  height: 100%;
+  height: 84.225em;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .main-title {
@@ -30,13 +32,18 @@
   left: 0%;
   top: auto;
   right: 0%;
-  bottom: -5px;
+  bottom: 0%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: 5em;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -93,7 +100,7 @@
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-left: 2.25em;
+  padding-left: 0px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -115,9 +122,10 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 5em;
+  width: 9.75em;
   margin-right: auto;
   margin-left: 0.75em;
+  padding-right: 4.25em;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -136,12 +144,15 @@
 
 .footer-container {
   position: relative;
+  left: 0%;
+  top: auto;
+  right: 0%;
+  bottom: 0%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 100%;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -207,7 +218,7 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 8.5em;
+  width: 9.75em;
   margin-right: 0.75em;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -329,12 +340,70 @@
   display: block;
   width: 100%;
   max-width: 110em;
-  margin-top: 9.5em;
+  margin-top: 8em;
   margin-right: auto;
   margin-left: auto;
 }
 
 .body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-color: #000;
+}
+
+.body-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.body-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 

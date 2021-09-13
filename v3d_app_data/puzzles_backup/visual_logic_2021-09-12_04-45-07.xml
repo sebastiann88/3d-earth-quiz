@@ -1,0 +1,685 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="803" scrolly="585.9999999999998" scale="0.9"></tab>
+  <tab name="main" type="MainTab" active="true" scrollx="823.3570556640625" scrolly="88.49057006835938" scale="0.9">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="R,;yGy:B[j#1{lLQy{!s" type="">currentQuestion</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="yTtqXwFDR$D!gc)!Rsib" x="-850" y="-570">
+      <field name="VAR" id="R,;yGy:B[j#1{lLQy{!s">currentQuestion</field>
+      <value name="VALUE">
+        <block type="math_number" id="J8dPudq:0%kK.``B][-w">
+          <field name="NUM">0</field>
+        </block>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenHovered" id="ZEse6WST7wB5f,Hi{gn$" x="-870" y="-390">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="-3r?of=K=/TTPspaq(_l">
+          <field name="FIELDNAME">&lt;none&gt;</field>
+        </shadow>
+        <block type="objectList" id="Fr|fRHa%y-kwrQM#+P1Q">
+          <field name="FIELDNAME">Inner Core</field>
+        </block>
+      </value>
+      <statement name="DO_OVER">
+        <block type="assignMaterial" id="bB-q_gK$Ws$oFsR-q;IP">
+          <value name="VALUE2">
+            <shadow type="materialList" id="qahb[2wpaU|Q3tOTat!n">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </shadow>
+            <block type="materialList" id="y+g!XUH.g;3st_ja:pf_">
+              <field name="FIELDNAME">Selection</field>
+            </block>
+          </value>
+          <value name="VALUE1">
+            <shadow type="objectList" id="Wv/UD(F(KY*u`_utib8j">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </shadow>
+            <block type="objectList" id=";(3T1PaG{O`~$_:sk=a,">
+              <field name="FIELDNAME">Inner Core</field>
+            </block>
+          </value>
+          <next>
+            <block type="assignMaterial" id=";.?^~]Po@e=1zW@6qe,#">
+              <value name="VALUE2">
+                <shadow type="materialList">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="materialList" id="^{:ZJFKJcgC[UGr-U_zZ">
+                  <field name="FIELDNAME">Outer Core</field>
+                </block>
+              </value>
+              <value name="VALUE1">
+                <shadow type="objectList">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="objectList" id="98Ew;B99trQpUU`*7fYJ">
+                  <field name="FIELDNAME">Outer Core</field>
+                </block>
+              </value>
+              <next>
+                <block type="assignMaterial" id="?YGNRupW6nZprNLPm{?!">
+                  <value name="VALUE2">
+                    <shadow type="materialList">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="materialList" id="`/C6#Qaa)fDF-|F8`)bs">
+                      <field name="FIELDNAME">Lower Mantle</field>
+                    </block>
+                  </value>
+                  <value name="VALUE1">
+                    <shadow type="objectList">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="objectList" id="/Rt`3b7/6~Zc)r@0!+tG">
+                      <field name="FIELDNAME">Lower Mantle</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="assignMaterial" id="tmdvO3#[[4m.d6#DM*3p">
+                      <value name="VALUE2">
+                        <shadow type="materialList">
+                          <field name="FIELDNAME">&lt;none&gt;</field>
+                        </shadow>
+                        <block type="materialList" id="A)^D6.qc~m7j9ik_hF`8">
+                          <field name="FIELDNAME">Upper Mantle</field>
+                        </block>
+                      </value>
+                      <value name="VALUE1">
+                        <shadow type="objectList">
+                          <field name="FIELDNAME">&lt;none&gt;</field>
+                        </shadow>
+                        <block type="objectList" id="wOmFmw,lw7uPv7a`$6Dt">
+                          <field name="FIELDNAME">Upper Mantle</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="assignMaterial" id="H.HfDEP(4pN2i4wYNDyA">
+                          <value name="VALUE2">
+                            <shadow type="materialList">
+                              <field name="FIELDNAME">&lt;none&gt;</field>
+                            </shadow>
+                            <block type="materialList" id="%6vW|$;9-UjM1C=BqFXm">
+                              <field name="FIELDNAME">Crust</field>
+                            </block>
+                          </value>
+                          <value name="VALUE1">
+                            <shadow type="objectList">
+                              <field name="FIELDNAME">&lt;none&gt;</field>
+                            </shadow>
+                            <block type="objectList" id="p+MOKRDVqfS0$D~%N]`b">
+                              <field name="FIELDNAME">Crust</field>
+                            </block>
+                          </value>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+      <statement name="DO_OUT">
+        <block type="assignMaterial" id="QB*+1gxLLKVPmo,q:toy">
+          <value name="VALUE2">
+            <shadow type="materialList">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </shadow>
+            <block type="materialList" id="bWlneG[tWX@#)ws$GWYo">
+              <field name="FIELDNAME">Inner Core</field>
+            </block>
+          </value>
+          <value name="VALUE1">
+            <shadow type="objectList">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </shadow>
+            <block type="objectList" id=":Xr:(C|:cxcKd$!J4_y7">
+              <field name="FIELDNAME">Inner Core</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+      <next>
+        <block type="whenHovered" id="oye`N/3;^W)aLj%eTLpU">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+          <field name="X_RAY">FALSE</field>
+          <value name="VALUE">
+            <shadow type="objectList">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </shadow>
+            <block type="objectList" id="-OGQib6hQw{T`;T?4c?r">
+              <field name="FIELDNAME">Outer Core</field>
+            </block>
+          </value>
+          <statement name="DO_OVER">
+            <block type="assignMaterial" id="*d^v0w%vG|a3KmrD}EWI">
+              <value name="VALUE2">
+                <shadow type="materialList">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="materialList" id="6FD9XG}yG]Zy|bWjU]wt">
+                  <field name="FIELDNAME">Inner Core</field>
+                </block>
+              </value>
+              <value name="VALUE1">
+                <shadow type="objectList">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="objectList" id="_|s)5BmF7]F-0Y`{I}zv">
+                  <field name="FIELDNAME">Inner Core</field>
+                </block>
+              </value>
+              <next>
+                <block type="assignMaterial" id="qJJD7E=``0o!myK54CT+">
+                  <value name="VALUE2">
+                    <shadow type="materialList">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="materialList" id="U?5:yZ`?-5ic-^EsZzMV">
+                      <field name="FIELDNAME">Selection</field>
+                    </block>
+                  </value>
+                  <value name="VALUE1">
+                    <shadow type="objectList">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="objectList" id="P2CTE2VAU6SHBgTXz8r2">
+                      <field name="FIELDNAME">Outer Core</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="assignMaterial" id="s3z;WXvIh}}j|VY3JdBf">
+                      <value name="VALUE2">
+                        <shadow type="materialList">
+                          <field name="FIELDNAME">&lt;none&gt;</field>
+                        </shadow>
+                        <block type="materialList" id="@$/[GW**1Ng10P/UdyEf">
+                          <field name="FIELDNAME">Lower Mantle</field>
+                        </block>
+                      </value>
+                      <value name="VALUE1">
+                        <shadow type="objectList">
+                          <field name="FIELDNAME">&lt;none&gt;</field>
+                        </shadow>
+                        <block type="objectList" id="n7m:D}`gg_ff95gRh][S">
+                          <field name="FIELDNAME">Lower Mantle</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="assignMaterial" id="*@jv16Cg98ilu=0Rq[Ej">
+                          <value name="VALUE2">
+                            <shadow type="materialList">
+                              <field name="FIELDNAME">&lt;none&gt;</field>
+                            </shadow>
+                            <block type="materialList" id="WA9/LDkkK9eXg1WscL4~">
+                              <field name="FIELDNAME">Upper Mantle</field>
+                            </block>
+                          </value>
+                          <value name="VALUE1">
+                            <shadow type="objectList">
+                              <field name="FIELDNAME">&lt;none&gt;</field>
+                            </shadow>
+                            <block type="objectList" id="veklliFXjB6Dyyp6*~d|">
+                              <field name="FIELDNAME">Upper Mantle</field>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="assignMaterial" id="*D#w.gw/fEZr@xTbw)iI">
+                              <value name="VALUE2">
+                                <shadow type="materialList">
+                                  <field name="FIELDNAME">&lt;none&gt;</field>
+                                </shadow>
+                                <block type="materialList" id=",:2w:9sxw]c7B*_#dmA3">
+                                  <field name="FIELDNAME">Crust</field>
+                                </block>
+                              </value>
+                              <value name="VALUE1">
+                                <shadow type="objectList">
+                                  <field name="FIELDNAME">&lt;none&gt;</field>
+                                </shadow>
+                                <block type="objectList" id="FDGc,_hTN}^ML=k/^Tu1">
+                                  <field name="FIELDNAME">Crust</field>
+                                </block>
+                              </value>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </statement>
+          <statement name="DO_OUT">
+            <block type="assignMaterial" id=")-f[0K)xTWn%RyVl0;B@">
+              <value name="VALUE2">
+                <shadow type="materialList">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="materialList" id=";R7z5v!UnSG#!d;zGYzE">
+                  <field name="FIELDNAME">Outer Core</field>
+                </block>
+              </value>
+              <value name="VALUE1">
+                <shadow type="objectList">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="objectList" id="X1gQCAgJ~jK{lwX*^Li!">
+                  <field name="FIELDNAME">Outer Core</field>
+                </block>
+              </value>
+            </block>
+          </statement>
+          <next>
+            <block type="whenHovered" id="{Us[Pp4,SlD0n/?ga??.">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+              <field name="X_RAY">FALSE</field>
+              <value name="VALUE">
+                <shadow type="objectList">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="objectList" id="/YEPQBugstu(bT:pxn{C">
+                  <field name="FIELDNAME">Lower Mantle</field>
+                </block>
+              </value>
+              <statement name="DO_OVER">
+                <block type="assignMaterial" id="?q0$(+H7kz~]O4YLPwE9">
+                  <value name="VALUE2">
+                    <shadow type="materialList">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="materialList" id="xZ[rOZj`NKAdlfF~(Zxs">
+                      <field name="FIELDNAME">Inner Core</field>
+                    </block>
+                  </value>
+                  <value name="VALUE1">
+                    <shadow type="objectList">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="objectList" id="Pqbm[.}]MR9J5/yY-sRS">
+                      <field name="FIELDNAME">Inner Core</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="assignMaterial" id="EriZpvs@gRdMsZ]+P$K#">
+                      <value name="VALUE2">
+                        <shadow type="materialList">
+                          <field name="FIELDNAME">&lt;none&gt;</field>
+                        </shadow>
+                        <block type="materialList" id="}@O$+KgC`|MOACdv;G/I">
+                          <field name="FIELDNAME">Outer Core</field>
+                        </block>
+                      </value>
+                      <value name="VALUE1">
+                        <shadow type="objectList">
+                          <field name="FIELDNAME">&lt;none&gt;</field>
+                        </shadow>
+                        <block type="objectList" id="y?p_u:+@u*i=;Q8e:i-H">
+                          <field name="FIELDNAME">Outer Core</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="assignMaterial" id="p,M{2|zXzODDP1f?[ij/">
+                          <value name="VALUE2">
+                            <shadow type="materialList">
+                              <field name="FIELDNAME">&lt;none&gt;</field>
+                            </shadow>
+                            <block type="materialList" id="|q0I7G@OeF[q/CvfCChq">
+                              <field name="FIELDNAME">Selection</field>
+                            </block>
+                          </value>
+                          <value name="VALUE1">
+                            <shadow type="objectList">
+                              <field name="FIELDNAME">&lt;none&gt;</field>
+                            </shadow>
+                            <block type="objectList" id="IM_q/mc108]9r0ecZ=kE">
+                              <field name="FIELDNAME">Lower Mantle</field>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="assignMaterial" id="LFx(gadDiy`4t@24z%-X">
+                              <value name="VALUE2">
+                                <shadow type="materialList">
+                                  <field name="FIELDNAME">&lt;none&gt;</field>
+                                </shadow>
+                                <block type="materialList" id="QA(.)9}B(XFB/;]:1|I8">
+                                  <field name="FIELDNAME">Upper Mantle</field>
+                                </block>
+                              </value>
+                              <value name="VALUE1">
+                                <shadow type="objectList">
+                                  <field name="FIELDNAME">&lt;none&gt;</field>
+                                </shadow>
+                                <block type="objectList" id="9BD[}fs7|Kzc~Wg)LXpn">
+                                  <field name="FIELDNAME">Upper Mantle</field>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="assignMaterial" id="t-/B8GCW!7T1a*:}wC-s">
+                                  <value name="VALUE2">
+                                    <shadow type="materialList">
+                                      <field name="FIELDNAME">&lt;none&gt;</field>
+                                    </shadow>
+                                    <block type="materialList" id="yeYoAWG5$S-6J0TuZvbn">
+                                      <field name="FIELDNAME">Crust</field>
+                                    </block>
+                                  </value>
+                                  <value name="VALUE1">
+                                    <shadow type="objectList">
+                                      <field name="FIELDNAME">&lt;none&gt;</field>
+                                    </shadow>
+                                    <block type="objectList" id="BR#9H`[D!5$|ejl:m)Z1">
+                                      <field name="FIELDNAME">Crust</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </statement>
+              <statement name="DO_OUT">
+                <block type="assignMaterial" id="elt+{#|J+m5~3IE~[Xy~">
+                  <value name="VALUE2">
+                    <shadow type="materialList">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="materialList" id=".pCc},Wo~`0A*0ld1n;1">
+                      <field name="FIELDNAME">Lower Mantle</field>
+                    </block>
+                  </value>
+                  <value name="VALUE1">
+                    <shadow type="objectList">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="objectList" id="huAsnMozW)}RWP)Wp])i">
+                      <field name="FIELDNAME">Lower Mantle</field>
+                    </block>
+                  </value>
+                </block>
+              </statement>
+              <next>
+                <block type="whenHovered" id="80%D2x@DxEVVm=pMq-Th">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+                  <field name="X_RAY">FALSE</field>
+                  <value name="VALUE">
+                    <shadow type="objectList">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="objectList" id="28,{b-;3u}vn^U@mr#zM">
+                      <field name="FIELDNAME">Upper Mantle</field>
+                    </block>
+                  </value>
+                  <statement name="DO_OVER">
+                    <block type="assignMaterial" id=":%L%[,dyJzyzk)tH|zEr">
+                      <value name="VALUE2">
+                        <shadow type="materialList">
+                          <field name="FIELDNAME">&lt;none&gt;</field>
+                        </shadow>
+                        <block type="materialList" id="*bSm2LTj=MRtQ89tR?d;">
+                          <field name="FIELDNAME">Inner Core</field>
+                        </block>
+                      </value>
+                      <value name="VALUE1">
+                        <shadow type="objectList">
+                          <field name="FIELDNAME">&lt;none&gt;</field>
+                        </shadow>
+                        <block type="objectList" id="A2Yi3n=eQTl)e|SL}=ba">
+                          <field name="FIELDNAME">Inner Core</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="assignMaterial" id="+e,q}=WPrDx$a_YKs/42">
+                          <value name="VALUE2">
+                            <shadow type="materialList">
+                              <field name="FIELDNAME">&lt;none&gt;</field>
+                            </shadow>
+                            <block type="materialList" id="Z:Ii2,MFZ]GAT*:0JkR?">
+                              <field name="FIELDNAME">Outer Core</field>
+                            </block>
+                          </value>
+                          <value name="VALUE1">
+                            <shadow type="objectList">
+                              <field name="FIELDNAME">&lt;none&gt;</field>
+                            </shadow>
+                            <block type="objectList" id="o6=(Hsa021Qo_9R~=!pQ">
+                              <field name="FIELDNAME">Outer Core</field>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="assignMaterial" id="6!03k^Zm:p#V,nDC@rZ1">
+                              <value name="VALUE2">
+                                <shadow type="materialList">
+                                  <field name="FIELDNAME">&lt;none&gt;</field>
+                                </shadow>
+                                <block type="materialList" id="FNY*cUhO:kUjx5|LeNjE">
+                                  <field name="FIELDNAME">Lower Mantle</field>
+                                </block>
+                              </value>
+                              <value name="VALUE1">
+                                <shadow type="objectList">
+                                  <field name="FIELDNAME">&lt;none&gt;</field>
+                                </shadow>
+                                <block type="objectList" id="8m!w^,+Xs~.QBMi=Y,]1">
+                                  <field name="FIELDNAME">Lower Mantle</field>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="assignMaterial" id="In|$`/Z/jMv0iPj2SNo}">
+                                  <value name="VALUE2">
+                                    <shadow type="materialList">
+                                      <field name="FIELDNAME">&lt;none&gt;</field>
+                                    </shadow>
+                                    <block type="materialList" id="[kW3f@(B(1:OQ;Bn4(}p">
+                                      <field name="FIELDNAME">Selection</field>
+                                    </block>
+                                  </value>
+                                  <value name="VALUE1">
+                                    <shadow type="objectList">
+                                      <field name="FIELDNAME">&lt;none&gt;</field>
+                                    </shadow>
+                                    <block type="objectList" id="zC6`:Ag-zgBl)g87DsQ,">
+                                      <field name="FIELDNAME">Upper Mantle</field>
+                                    </block>
+                                  </value>
+                                  <next>
+                                    <block type="assignMaterial" id="qRo//ja+u0I.^+0$H+`7">
+                                      <value name="VALUE2">
+                                        <shadow type="materialList">
+                                          <field name="FIELDNAME">&lt;none&gt;</field>
+                                        </shadow>
+                                        <block type="materialList" id=",m_9dmL3?ZuTc/6R5(P,">
+                                          <field name="FIELDNAME">Crust</field>
+                                        </block>
+                                      </value>
+                                      <value name="VALUE1">
+                                        <shadow type="objectList">
+                                          <field name="FIELDNAME">&lt;none&gt;</field>
+                                        </shadow>
+                                        <block type="objectList" id="y-iN)jY_a2T6L4Y!Y_L@">
+                                          <field name="FIELDNAME">Crust</field>
+                                        </block>
+                                      </value>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </statement>
+                  <statement name="DO_OUT">
+                    <block type="assignMaterial" id="lDb3r8_G5W~j69L6]:e?">
+                      <value name="VALUE2">
+                        <shadow type="materialList">
+                          <field name="FIELDNAME">&lt;none&gt;</field>
+                        </shadow>
+                        <block type="materialList" id="B2}#~v!OHrdhZh#MPIv=">
+                          <field name="FIELDNAME">Upper Mantle</field>
+                        </block>
+                      </value>
+                      <value name="VALUE1">
+                        <shadow type="objectList">
+                          <field name="FIELDNAME">&lt;none&gt;</field>
+                        </shadow>
+                        <block type="objectList" id="jVk5es)$4z=XvLQ]mnW(">
+                          <field name="FIELDNAME">Upper Mantle</field>
+                        </block>
+                      </value>
+                    </block>
+                  </statement>
+                  <next>
+                    <block type="whenHovered" id="4Yj*UG2WCC#J=:g=C8mJ">
+                      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+                      <field name="X_RAY">FALSE</field>
+                      <value name="VALUE">
+                        <shadow type="objectList">
+                          <field name="FIELDNAME">&lt;none&gt;</field>
+                        </shadow>
+                        <block type="objectList" id="r^?$:WyLh=61@}y2+{$T">
+                          <field name="FIELDNAME">Crust</field>
+                        </block>
+                      </value>
+                      <statement name="DO_OVER">
+                        <block type="assignMaterial" id="Kfq*XZj~48(MCY1lJ)=1">
+                          <value name="VALUE2">
+                            <shadow type="materialList">
+                              <field name="FIELDNAME">&lt;none&gt;</field>
+                            </shadow>
+                            <block type="materialList" id="$LREhNew2px5`{-[PlNf">
+                              <field name="FIELDNAME">Inner Core</field>
+                            </block>
+                          </value>
+                          <value name="VALUE1">
+                            <shadow type="objectList">
+                              <field name="FIELDNAME">&lt;none&gt;</field>
+                            </shadow>
+                            <block type="objectList" id="anUPe,_y/4DO6r%6Hsj!">
+                              <field name="FIELDNAME">Inner Core</field>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="assignMaterial" id="m4P{iZmGjF3jf.PNu+4|">
+                              <value name="VALUE2">
+                                <shadow type="materialList">
+                                  <field name="FIELDNAME">&lt;none&gt;</field>
+                                </shadow>
+                                <block type="materialList" id="wG:Dgqze$RXr6q_E#cW|">
+                                  <field name="FIELDNAME">Outer Core</field>
+                                </block>
+                              </value>
+                              <value name="VALUE1">
+                                <shadow type="objectList">
+                                  <field name="FIELDNAME">&lt;none&gt;</field>
+                                </shadow>
+                                <block type="objectList" id="]uI,jrm-.K%wM)z844b;">
+                                  <field name="FIELDNAME">Outer Core</field>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="assignMaterial" id="PTqTBIx=T/w:;jz)sa?S">
+                                  <value name="VALUE2">
+                                    <shadow type="materialList">
+                                      <field name="FIELDNAME">&lt;none&gt;</field>
+                                    </shadow>
+                                    <block type="materialList" id="6Ah##xX``,37jPeibe=q">
+                                      <field name="FIELDNAME">Lower Mantle</field>
+                                    </block>
+                                  </value>
+                                  <value name="VALUE1">
+                                    <shadow type="objectList">
+                                      <field name="FIELDNAME">&lt;none&gt;</field>
+                                    </shadow>
+                                    <block type="objectList" id="h[=1=]lGsI?Ph*Vv]!;z">
+                                      <field name="FIELDNAME">Lower Mantle</field>
+                                    </block>
+                                  </value>
+                                  <next>
+                                    <block type="assignMaterial" id="(Pqx)[M}Vz2Acx/aF9ID">
+                                      <value name="VALUE2">
+                                        <shadow type="materialList">
+                                          <field name="FIELDNAME">&lt;none&gt;</field>
+                                        </shadow>
+                                        <block type="materialList" id="IOY;w5wiCtR:Xpnv/gdm">
+                                          <field name="FIELDNAME">Upper Mantle</field>
+                                        </block>
+                                      </value>
+                                      <value name="VALUE1">
+                                        <shadow type="objectList">
+                                          <field name="FIELDNAME">&lt;none&gt;</field>
+                                        </shadow>
+                                        <block type="objectList" id="(F)=)Qm.y8p/D,FsKd!!">
+                                          <field name="FIELDNAME">Upper Mantle</field>
+                                        </block>
+                                      </value>
+                                      <next>
+                                        <block type="assignMaterial" id="aOq^SO4^Y^F0tG4[Vwd3">
+                                          <value name="VALUE2">
+                                            <shadow type="materialList">
+                                              <field name="FIELDNAME">&lt;none&gt;</field>
+                                            </shadow>
+                                            <block type="materialList" id="b.TVWf}SU*_?T75,?tm^">
+                                              <field name="FIELDNAME">Selection</field>
+                                            </block>
+                                          </value>
+                                          <value name="VALUE1">
+                                            <shadow type="objectList">
+                                              <field name="FIELDNAME">&lt;none&gt;</field>
+                                            </shadow>
+                                            <block type="objectList" id="?8x,TCY3E`A1cB4X;Q+m">
+                                              <field name="FIELDNAME">Crust</field>
+                                            </block>
+                                          </value>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </statement>
+                      <statement name="DO_OUT">
+                        <block type="assignMaterial" id="%?KTzJDtVZM)a1^vq-_D">
+                          <value name="VALUE2">
+                            <shadow type="materialList">
+                              <field name="FIELDNAME">&lt;none&gt;</field>
+                            </shadow>
+                            <block type="materialList" id="9pF~$vxYVxjMaBJvA?:g">
+                              <field name="FIELDNAME">Crust</field>
+                            </block>
+                          </value>
+                          <value name="VALUE1">
+                            <shadow type="objectList">
+                              <field name="FIELDNAME">&lt;none&gt;</field>
+                            </shadow>
+                            <block type="objectList" id=":-{q3~BFD4cKtgMT!Hc|">
+                              <field name="FIELDNAME">Crust</field>
+                            </block>
+                          </value>
+                        </block>
+                      </statement>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+  </tab>
+  <editorsettings viewport-x="1142.6" viewport-y="111" viewport-w="710.4" viewport-h="624" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>

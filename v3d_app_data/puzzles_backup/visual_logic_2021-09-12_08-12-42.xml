@@ -1,0 +1,355 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="803.0000000000009" scrolly="585.9999999999998" scale="0.9"></tab>
+  <tab name="main" type="MainTab" active="true" scrollx="878.5169677734375" scrolly="455.4964294433594" scale="0.760921622384659">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="{`wG(UqI:BrDn}Hzi.n0" type="">currentlySelected</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="hide" id="~AgAUKu#e*8lt9^6ln6[" x="-730" y="-570">
+      <value name="VALUE">
+        <shadow type="objectList" id="uXUjt,uZDA3L:}a0[-_n">
+          <field name="FIELDNAME">&lt;none&gt;</field>
+        </shadow>
+        <block type="objectList" id="c/JJmzF0ZRBNAV+NU/FL">
+          <field name="FIELDNAME">Inner Core S</field>
+        </block>
+      </value>
+      <next>
+        <block type="hide" id="9Tle05^nX~6k2zCx*3an">
+          <value name="VALUE">
+            <shadow type="objectList">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </shadow>
+            <block type="objectList" id="f,UJMFRW}iFQgu91:xxE">
+              <field name="FIELDNAME">Outer Core S</field>
+            </block>
+          </value>
+          <next>
+            <block type="hide" id="r|0`9bS,aM6C7IkO=lY]">
+              <value name="VALUE">
+                <shadow type="objectList">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="objectList" id="Qh^1em/:VCPYvqC*=R)k">
+                  <field name="FIELDNAME">Lower Mantle S</field>
+                </block>
+              </value>
+              <next>
+                <block type="hide" id="E3)X]a1w%Tfng7XP]TKf">
+                  <value name="VALUE">
+                    <shadow type="objectList">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="objectList" id="?62{O;9Dwe_JSfp.t!{k">
+                      <field name="FIELDNAME">Upper Mantle S</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="hide" id="@u7)/c5d06|XA~+BTLx5">
+                      <value name="VALUE">
+                        <shadow type="objectList">
+                          <field name="FIELDNAME">&lt;none&gt;</field>
+                        </shadow>
+                        <block type="objectList" id="DYZ]cUy]T(5Db9-[j))V">
+                          <field name="FIELDNAME">Crust S</field>
+                        </block>
+                      </value>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenClicked" id="bTo/S0pItu*cVAix:#oE" x="-670" y="-90">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="true"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <field name="DOUBLE_CLICK">FALSE</field>
+      <field name="LEFT_BUTTON">TRUE</field>
+      <field name="MIDDLE_BUTTON">TRUE</field>
+      <field name="RIGHT_BUTTON">TRUE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="42VV@N#YYCAlmqSkw~dF">
+          <field name="FIELDNAME">&lt;none&gt;</field>
+        </shadow>
+        <block type="objectList" id="Fr|fRHa%y-kwrQM#+P1Q">
+          <field name="FIELDNAME">Inner Core</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="variables_set" id="8IFbX#D2q*[-Hq;gcKW}">
+          <field name="VAR" id="{`wG(UqI:BrDn}Hzi.n0">currentlySelected</field>
+          <value name="VALUE">
+            <block type="logic_boolean" id="DWHLLx!.GVti`w,3+_J~">
+              <field name="BOOL">TRUE</field>
+            </block>
+          </value>
+          <next>
+            <block type="assignMaterial" id="bc)vwkwV8%*LU)^8-n~.">
+              <value name="VALUE2">
+                <shadow type="materialList" id="mFWVuc!e$oeV8K,%CSnP">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="materialList" id="mulM)+eG;uIryIbGbAGl">
+                  <field name="FIELDNAME">Selection</field>
+                </block>
+              </value>
+              <value name="VALUE1">
+                <shadow type="objectList" id="%u`g.|_^D)WUR?S,F7IR">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="objectList" id="}K=UMz|QQ(*2==hYd-T)">
+                  <field name="FIELDNAME">Inner Core</field>
+                </block>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+      <statement name="IF_MISSED_DO">
+        <block type="variables_set" id="m]?)/Z4a(d`%4b#HArQi">
+          <field name="VAR" id="{`wG(UqI:BrDn}Hzi.n0">currentlySelected</field>
+          <value name="VALUE">
+            <block type="logic_boolean" id="#VjzB^~Ar(iq}c0t;qc(">
+              <field name="BOOL">FALSE</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+      <next>
+        <block type="whenClicked" id="$b1z{.+jx,K=vBfkLB*v">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="true"></mutation>
+          <field name="X_RAY">FALSE</field>
+          <field name="DOUBLE_CLICK">FALSE</field>
+          <field name="LEFT_BUTTON">TRUE</field>
+          <field name="MIDDLE_BUTTON">TRUE</field>
+          <field name="RIGHT_BUTTON">TRUE</field>
+          <value name="VALUE">
+            <shadow type="objectList">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </shadow>
+            <block type="objectList" id="b$ww4#p6x`r[Sh-Y!7+e">
+              <field name="FIELDNAME">Outer Core</field>
+            </block>
+          </value>
+          <statement name="DO">
+            <block type="variables_set" id="Pb@ZcD5|J1c5[1Tr2||e">
+              <field name="VAR" id="{`wG(UqI:BrDn}Hzi.n0">currentlySelected</field>
+              <value name="VALUE">
+                <block type="logic_boolean" id="[ME(xS9e+=v*c`#np)L`">
+                  <field name="BOOL">TRUE</field>
+                </block>
+              </value>
+              <next>
+                <block type="assignMaterial" id="HoFp_3WYVq@0_~JGt)OE">
+                  <value name="VALUE2">
+                    <shadow type="materialList">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="materialList" id="07)M7aRsj@C9Q]Xc@L6I">
+                      <field name="FIELDNAME">Selection</field>
+                    </block>
+                  </value>
+                  <value name="VALUE1">
+                    <shadow type="objectList">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="objectList" id="13sc4INxwGwUtscC5=(a">
+                      <field name="FIELDNAME">Outer Core</field>
+                    </block>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </statement>
+          <statement name="IF_MISSED_DO">
+            <block type="variables_set" id="G8/3~KNW{E5}@-6Ok%p+">
+              <field name="VAR" id="{`wG(UqI:BrDn}Hzi.n0">currentlySelected</field>
+              <value name="VALUE">
+                <block type="logic_boolean" id="{zewWbNK8:$(sPQ]@ai8">
+                  <field name="BOOL">FALSE</field>
+                </block>
+              </value>
+            </block>
+          </statement>
+          <next>
+            <block type="whenClicked" id="vkyAvqJko2h,%|q+v!_~">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="true"></mutation>
+              <field name="X_RAY">FALSE</field>
+              <field name="DOUBLE_CLICK">FALSE</field>
+              <field name="LEFT_BUTTON">TRUE</field>
+              <field name="MIDDLE_BUTTON">TRUE</field>
+              <field name="RIGHT_BUTTON">TRUE</field>
+              <value name="VALUE">
+                <shadow type="objectList">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="objectList" id="2,-Rq(,oig.q?~-U-~k;">
+                  <field name="FIELDNAME">Lower Mantle</field>
+                </block>
+              </value>
+              <statement name="DO">
+                <block type="variables_set" id="*Wb:ip5ak@xfDMQ*Ju,1">
+                  <field name="VAR" id="{`wG(UqI:BrDn}Hzi.n0">currentlySelected</field>
+                  <value name="VALUE">
+                    <block type="logic_boolean" id="cd=A%67@;4%B#=S6)@r5">
+                      <field name="BOOL">TRUE</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="assignMaterial" id="GaB=*u:~-0TOGmR[g!%x">
+                      <value name="VALUE2">
+                        <shadow type="materialList">
+                          <field name="FIELDNAME">&lt;none&gt;</field>
+                        </shadow>
+                        <block type="materialList" id="*Dw,av-o#5c|nstY8uR?">
+                          <field name="FIELDNAME">Selection</field>
+                        </block>
+                      </value>
+                      <value name="VALUE1">
+                        <shadow type="objectList">
+                          <field name="FIELDNAME">&lt;none&gt;</field>
+                        </shadow>
+                        <block type="objectList" id="*K_Vx%yhqF}bqIQt,#KP">
+                          <field name="FIELDNAME">Lower Mantle</field>
+                        </block>
+                      </value>
+                    </block>
+                  </next>
+                </block>
+              </statement>
+              <statement name="IF_MISSED_DO">
+                <block type="variables_set" id="{2;=uFN[bv^9]00mJ]qT">
+                  <field name="VAR" id="{`wG(UqI:BrDn}Hzi.n0">currentlySelected</field>
+                  <value name="VALUE">
+                    <block type="logic_boolean" id="*!6G*lMM/)!(MIupuXN]">
+                      <field name="BOOL">FALSE</field>
+                    </block>
+                  </value>
+                </block>
+              </statement>
+              <next>
+                <block type="whenClicked" id="b-sT7GqM;25U_hS*wn,c">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+                  <field name="X_RAY">FALSE</field>
+                  <field name="DOUBLE_CLICK">FALSE</field>
+                  <field name="LEFT_BUTTON">TRUE</field>
+                  <field name="MIDDLE_BUTTON">TRUE</field>
+                  <field name="RIGHT_BUTTON">TRUE</field>
+                  <value name="VALUE">
+                    <shadow type="objectList">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="objectList" id="GmYl4y84{ZBhxFE6B@Wn">
+                      <field name="FIELDNAME">Upper Mantle</field>
+                    </block>
+                  </value>
+                  <statement name="DO">
+                    <block type="variables_set" id="R{LK6$!64:^NaBCJvW6c">
+                      <field name="VAR" id="{`wG(UqI:BrDn}Hzi.n0">currentlySelected</field>
+                      <value name="VALUE">
+                        <block type="logic_boolean" id="g[x);iAy7H^=Ep8N^*Ao">
+                          <field name="BOOL">TRUE</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="assignMaterial" id="%D9).TM~Ms4~(UG96jKX">
+                          <value name="VALUE2">
+                            <shadow type="materialList">
+                              <field name="FIELDNAME">&lt;none&gt;</field>
+                            </shadow>
+                            <block type="materialList" id="mHCgRK,^Lau$)16Q$oF0">
+                              <field name="FIELDNAME">Selection</field>
+                            </block>
+                          </value>
+                          <value name="VALUE1">
+                            <shadow type="objectList">
+                              <field name="FIELDNAME">&lt;none&gt;</field>
+                            </shadow>
+                            <block type="objectList" id="h7|6Jk1eAxZV}f;dr|*!">
+                              <field name="FIELDNAME">Upper Mantle</field>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="variables_set" id="6x^T%_Vv6bw4i%Fx9y6H">
+                              <field name="VAR" id="{`wG(UqI:BrDn}Hzi.n0">currentlySelected</field>
+                              <value name="VALUE">
+                                <block type="logic_boolean" id="Alwg^BkUXxz6n4Pi|YY|">
+                                  <field name="BOOL">FALSE</field>
+                                </block>
+                              </value>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </statement>
+                  <next>
+                    <block type="whenClicked" id=")N,Bwu0/V.=aVtfUK_B1">
+                      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+                      <field name="X_RAY">FALSE</field>
+                      <field name="DOUBLE_CLICK">FALSE</field>
+                      <field name="LEFT_BUTTON">TRUE</field>
+                      <field name="MIDDLE_BUTTON">TRUE</field>
+                      <field name="RIGHT_BUTTON">TRUE</field>
+                      <value name="VALUE">
+                        <shadow type="objectList">
+                          <field name="FIELDNAME">&lt;none&gt;</field>
+                        </shadow>
+                        <block type="objectList" id="ux3N=)i-XlI$Kv`E{1mk">
+                          <field name="FIELDNAME">Crust</field>
+                        </block>
+                      </value>
+                      <statement name="DO">
+                        <block type="variables_set" id="*UVH#pLhY-0a^1^d,a6b">
+                          <field name="VAR" id="{`wG(UqI:BrDn}Hzi.n0">currentlySelected</field>
+                          <value name="VALUE">
+                            <block type="logic_boolean" id="P*[~UY;/i[,7?6HZX|kh">
+                              <field name="BOOL">TRUE</field>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="assignMaterial" id="=j-wUjx]Xw.l@~uvC(bv">
+                              <value name="VALUE2">
+                                <shadow type="materialList">
+                                  <field name="FIELDNAME">&lt;none&gt;</field>
+                                </shadow>
+                                <block type="materialList" id="jjmh5+w5_}_$KsP,giYy">
+                                  <field name="FIELDNAME">Selection</field>
+                                </block>
+                              </value>
+                              <value name="VALUE1">
+                                <shadow type="objectList">
+                                  <field name="FIELDNAME">&lt;none&gt;</field>
+                                </shadow>
+                                <block type="objectList" id="GJX++F3_1EY;4(nHd$7C">
+                                  <field name="FIELDNAME">Crust</field>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="variables_set" id="!Ff]|G~ouGL-x2(511c}">
+                                  <field name="VAR" id="{`wG(UqI:BrDn}Hzi.n0">currentlySelected</field>
+                                  <value name="VALUE">
+                                    <block type="logic_boolean" id="Tq:.7HDr*4nC3~x00W%v">
+                                      <field name="BOOL">FALSE</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </statement>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+  </tab>
+  <editorsettings viewport-x="1536.6" viewport-y="132" viewport-w="710.4" viewport-h="624" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>
