@@ -118,16 +118,19 @@ function createCustomPreloader(updateCb, finishCb) {
  * Modify the app's preloader to track the loading process in the Puzzles Editor.
  */
 function puzzlesEditorPreparePreloader(preloader) {
-    var _onUpdate = preloader.onUpdate.bind(preloader);
-    preloader.onUpdate = function(percentage) {
-        _onUpdate(percentage);
-        v3d.PE.loadingUpdateCb(percentage);
-    }
+    // backward compatibility for loading new projects within the old Puzzles Editor
+    if (v3d.PE.loadingUpdateCb !== undefined && v3d.PE.loadingFinishCb !== undefined) {
+        var _onUpdate = preloader.onUpdate.bind(preloader);
+        preloader.onUpdate = function(percentage) {
+            _onUpdate(percentage);
+            v3d.PE.loadingUpdateCb(percentage);
+        }
 
-    var _onFinish = preloader.onFinish.bind(preloader);
-    preloader.onFinish = function() {
-        _onFinish();
-        v3d.PE.loadingFinishCb();
+        var _onFinish = preloader.onFinish.bind(preloader);
+        preloader.onFinish = function() {
+            _onFinish();
+            v3d.PE.loadingFinishCb();
+        }
     }
 }
 
